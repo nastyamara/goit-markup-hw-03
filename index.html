@@ -38,90 +38,99 @@
     <main>
 <!-- секція хіроу -->
         <section class="hero-sec">
-            <h1 class=" hero-title">Ефективні рішення для вашого бізнесу</h1>
+            <div class="container hero-container">
+            <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
             <button type="button" class="hero-btn btn"> Замовити послугу</button>
+    </div>
         </section>
 <!-- секція наші переваги -->
         <section class="benefits-sec">
+            <div class="container">
             <!--Заголовок для індексатора та асистивних технологій, cховати в css-->
-            <h2>Наші переваги</h2>
-            <ul class="list">
-                <li>
+            <h2 class="visually-hidden">Наші переваги</h2>
+            <ul class="list benefits-list">
+                <li class="benefits-item">
                     <h3 class="benefits-list-title title">УВАГА ДО ДЕТАЛЕЙ</h3>
-                    <p class="benefits-list-item">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
+                    <p class="benefits-list-descr">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
 
                 </li>
-                <li>
+                <li class="benefits-item">
                     <h3 class="benefits-list-title title">ПУНКТУАЛЬНІСТЬ</h3>
-                    <p class="benefits-list-item">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
+                    <p class="benefits-list-descr">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
 
                 </li>
-                <li>
+                <li class="benefits-item">
                     <h3 class="benefits-list-title title">ПЛАНУВАННЯ</h3>
-                    <p class="benefits-list-item">Так само консультація з широким активом значною мірою зумовлює.</p>
+                    <p class="benefits-list-descr">Так само консультація з широким активом значною мірою зумовлює.</p>
 
                 </li>
-                <li>
+                <li class="benefits-item">
                     <h3 class="benefits-list-title title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-                    <p class="benefits-list-item">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
+                    <p class="benefits-list-descr">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
 
                 </li>
             </ul>
+            </div>
         </section>
 <!-- секція чим ми займаємось -->
         <section>
+            <div class="container projects-container">
             <h2 class="projects-title title">Чим ми займаємося</h2>
-            <ul class="list">
+            <ul class="list projects-list">
                 <li> <img src=".//images/box1_sq.jpg" alt="Монітор комп'ютера, екран планшета та клавіатура" width="370"
                         height="294"></li>
                 <li> <img src="./images/box2_sq.jpg" alt="Мобільний телефон біля ноутбуку з макетом мобільного додатку"
                         width="370" height="294"></li>
                 <li> <img src="./images/box3_sq.jpg" alt="Пантон на екрані планшета" width="370" height="294"></li>
             </ul>
-
+</div>
         </section>
 <!-- секція наша команда -->
         <section class="team-sec">
+            <div class="container">
             <h2 class="team-title title">Наша команда</h2>
-            <ul class="list">
+            <ul class="list team-list">
                 <li class="team-item">
                     <img src="./images/ihor1_sq.jpg" alt="фото" width="270" height="260">
-                    <h3 class="team-name title">Ігор Дем'яненко</h3>
+                   <div class="team-descr"> <h3 class="team-name title">Ігор Дем'яненко</h3>
                     <p class="team-position"> Product Designer</p>
-
+</div>
                 </li>
                 <li class="team-item">
                     <img src="./images/olha2_sq.jpg" alt="фото" width="270" height="260">
-                    <h3 class="team-name title">Ольга Рєпіна</h3>
+                   <div class="team-descr">
+                     <h3 class="team-name title">Ольга Рєпіна</h3>
                     <p class="team-position">Frontend Developer</p>
+                    </div>
                 </li>
                 <li class="team-item">
                     <img src="./images/mykola3_sq.jpg" alt="фото" width="270" height="260">
-                    <h3 class="team-name title">Микола Тарасов</h3>
+                   <div class="team-descr"> <h3 class="team-name title">Микола Тарасов</h3>
                     <p class="team-position">Marketing</p>
+                    </div>
                 </li>
                 <li class="team-item">
                     <img src="./images/myhailo4_sq.jpg" alt="фото" width="270" height="260">
-                    <h3 class="team-name title">Михайло Єрмаков</h3>
+                   <div class="team-descr"><h3 class="team-name title">Михайло Єрмаков</h3>
                     <p class="team-position">UI Designer</p>
+                    </div>
                 </li>
             </ul>
-
+</div>
         </section>
     </main>
-    <footer class="footer">
-        <a href="./index.html" class="logo"><span class="logo-web"> Web</span><span class="logo-footer">Studio</span> </a>
+    <footer class="footer ">
+        <div class="container footer-container">
+        <a href="./index.html" class="logo logo-footer"><span class="logo-web"> Web</span><span class="logo-studio">Studio</span> </a>
         <address class="address-list">
-            <ul class="list">
+            <ul class="list footer-list">
                 <li class="address-item"><a href="" class="link address-link"> м. Київ, пр-т Лесі Українки, 26</a></li>
                 <li class="address-item"><a href="mailto:info@devstudio.com" class="link address-link address-contacts">info@devstudio.com</a></li>
                 <li class="address-item"><a href="tel:+380961111111" class="link address-link address-contacts">+38 096 111 11 11</a></li>
             </ul>
 
         </address>
-
-
-
+        </div>
     </footer>
 </body>
 

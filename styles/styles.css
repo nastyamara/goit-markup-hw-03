@@ -25,7 +25,7 @@ img {
 }
 /* common */
 .container {
-    outline: 2px solid tomato;
+    /* outline: 2px solid tomato; */
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
@@ -139,40 +139,76 @@ padding-bottom: 32px;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--contrast-text-h-color);
-    width: 696px;
-
+    padding: 200px 252px 30px 252px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .hero-sec {
     background-color:var(--accent-bgd-color) ;
+    padding-bottom: 200px;
 }
 
 .hero-btn {
+    display: block;
 font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
-    letter-spacing: 0.06em; 
-}
+    letter-spacing: 0.06em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 17px 32px;
+    border-radius: 4px;
+  }
 
 /* section benefits */
-
+.visually-hidden {
+    position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+    
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+}
+.benefits-list {
+    display: flex;
+    padding-top: 94px;
+    padding-bottom: 118px;
+}
 .benefits-list-title {
     font-weight: 700;
     line-height: 1.14;
     text-transform: uppercase;
 }
 
-.benefits-list-item {
+.benefits-list-descr {
     line-height: 1.71;
     width: 270px;
+   
+}
+
+.benefits-item:not(:last-child){
+margin-right: 30px;
 }
 
 /* section projects */
-
+.projects-container {
+    padding-bottom: 94px;
+}
+.projects-list{
+    display: flex;
+    gap: 30px;
+}
 .projects-title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
+    margin-bottom: 50px;
 }
 
 /* section team */
@@ -186,8 +222,17 @@ font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
+    padding-top: 94px;
+    padding-bottom: 50px;
 }
 
+.team-list {
+    display: flex;
+    padding-bottom: 94px;
+}
+.team-descr {
+    padding: 30px 70px;
+}
 .team-name {
     font-weight: 500;
     font-size: 16px;
@@ -203,8 +248,12 @@ font-weight: 700;
 
 .team-item {
     background-color: var(--contrast-text-h-color) ;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
 }
-
+.team-item:not(last-child){
+    margin-right: 30px;
+}
 /* footer */
 
 .address-link {
@@ -218,9 +267,21 @@ font-weight: 700;
 
 .footer {
     background-color:var(--accent-bgd-color) ;
+   
+}
+.footer-container {
+padding-top: 60px;
+    padding-bottom: 60px;
+}
+.logo-studio {
+    color: var(--contrast-text-h-color);
 }
 .logo-footer {
-    color: var(--contrast-text-h-color);
+    margin-bottom: 20px;
+}
+
+.footer-list {
+    gap: 9px;
 }
 
 /* portfolio page */
