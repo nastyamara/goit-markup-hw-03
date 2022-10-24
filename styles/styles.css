@@ -33,6 +33,11 @@ img {
     margin-right: auto;
 }
 
+.section {
+    padding-bottom: 94px;
+    padding-top: 94px;
+}
+
 .list {
     list-style: none;
     margin: 0;
@@ -62,6 +67,9 @@ img {
 }
 
 /* header */
+.header {
+    border-bottom: 1px solid #ECECEC;
+}
 .header-container {
 display: flex;
 align-items: center;
@@ -104,6 +112,7 @@ align-items: center;
 
 }
 .nav-link{
+    display: block;
     color: var(--main-h-color) ;
 padding-top: 32px;
 padding-bottom: 32px;
@@ -133,7 +142,9 @@ padding-bottom: 32px;
 
 /* main */
 /* section hero */
-
+.hero-container {
+    padding: 200px 252px;
+}
 .hero-title {
     font-weight: 900;
     font-size: 44px;
@@ -142,13 +153,13 @@ padding-bottom: 32px;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--contrast-text-h-color);
-    padding: 200px 252px 30px 252px;
+    margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
 }
 .hero-sec {
     background-color:var(--accent-bgd-color) ;
-    padding-bottom: 200px;
+    
 }
 
 .hero-btn {
@@ -186,8 +197,8 @@ font-weight: 700;
 }
 .benefits-list {
     display: flex;
-    padding-top: 94px;
-    padding-bottom: 118px;
+    /* padding-top: 94px; */
+
 }
 .benefits-list-title {
     font-weight: 700;
@@ -198,8 +209,9 @@ font-weight: 700;
 
 .benefits-list-descr {
     line-height: 1.71;
-    width: 270px;
-   
+}
+.benefits-item {
+    width: calc((100% - 60px)/3);
 }
 
 .benefits-item:not(:last-child){
@@ -207,8 +219,8 @@ margin-right: 30px;
 }
 
 /* section projects */
-.projects-container {
-    padding-bottom: 94px;
+.projects-sec {
+    padding-top: 0;
 }
 .projects-list{
     display: flex;
@@ -233,13 +245,12 @@ margin-right: 30px;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
-    padding-top: 94px;
     padding-bottom: 50px;
 }
 
 .team-list {
     display: flex;
-    padding-bottom: 94px;
+    
 }
 .team-descr {
     padding-top: 30px;
@@ -297,10 +308,9 @@ padding-top: 60px;
 }
 
 /* portfolio page */
-.portfolio-container {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
+/* .portfolio-container {
+    padding-top: 94px; 
+} */
 
 .filter-btn {
     font-weight: 500;
@@ -332,20 +342,22 @@ margin-right: 8px;
         font-size: 18px;
         line-height: 2;
         letter-spacing: 0.06em;
-        padding: 20px 24px 4px 24px;
+        
 }
 
 .projects-list-descr {
         font-size: 16px;
         line-height: 1.88;   
         color: var(--main-text-color);
-    padding-left: 24px;
-padding-bottom: 20px;
+
 }
-        
+.portfolio-border {
+    padding: 20px 24px;
+    border: 1px solid #EEEEEE;
+    border-top: none;
+}        
 
  .portfolio-item {
-    border: 1px solid #EEEEEE;
     width: calc((100% - 60px)/3);
     margin-right: 30px;
     margin-bottom: 30px;
